@@ -1,23 +1,23 @@
 #include <stdio.h>
 int main()
-    //¶¨ÒåÒ»¸ö±äÁ¿£¬ÈôÔÚ{}Ç°£¬ÔòÎªÈ«¾Ö±äÁ¿£¬ÈôÔÚ{}ÄÚÔòÎª¾Ö²¿±äÁ¿
+    //å®šä¹‰ä¸€ä¸ªå˜é‡ï¼Œè‹¥åœ¨{}å‰ï¼Œåˆ™ä¸ºå…¨å±€å˜é‡ï¼Œè‹¥åœ¨{}å†…åˆ™ä¸ºå±€éƒ¨å˜é‡ï¼Œå±€éƒ¨å˜é‡ä¼˜å…ˆ
 {
-	extern int  X;    //ÉùÃ÷Ò»¸ö±äÁ¿£¨¾Ö²¿±äÁ¿£©
-	int i ;           //ÉùÃ÷£¬Ò²ÊÇ¶¨ÒåÒ»¸ö±äÁ¿
-	int p = 1;        //¶¨ÒåÒ»¸ö±äÁ¿£¬²¢¸øÓèÒ»¸ö³õÊ¼Öµ
+	extern int  X;    //å£°æ˜Žä¸€ä¸ªå˜é‡ï¼ˆå±€éƒ¨å˜é‡ï¼‰
+	int i ;           //å£°æ˜Žï¼Œä¹Ÿæ˜¯å®šä¹‰ä¸€ä¸ªå˜é‡
+	int p = 1;        //å®šä¹‰ä¸€ä¸ªå˜é‡ï¼Œå¹¶ç»™äºˆä¸€ä¸ªåˆå§‹å€¼
 
 
 
 	char ch = 'a';       
 	printf("%d \n", ch);
 	printf("%c \n",ch);
-	//   %d£¬±íÊ¾ÕûÐÍ    %c£¬±íÊ¾×Ö·û    charÎªÒ»×Ö½ÚÕûÊýÀàÐÍ±äÁ¿
+	//   %dï¼Œè¡¨ç¤ºæ•´åž‹    %cï¼Œè¡¨ç¤ºå­—ç¬¦    charä¸ºä¸€å­—èŠ‚æ•´æ•°ç±»åž‹å˜é‡
 	short int age = 21;
 	float wt = 65.7;
-	//   int£¬ËÄ×Ö½ÚÕûÐÍ±äÁ¿     float£¬µ¥¾«¶È¸¡µãÀàÐÍ±äÁ¿£¬1Î»·ûºÅ£¬8Î»Ö¸Êý£¬23Î»Ð¡Êý
+	//   intï¼Œå››å­—èŠ‚æ•´åž‹å˜é‡     floatï¼Œå•ç²¾åº¦æµ®ç‚¹ç±»åž‹å˜é‡ï¼Œ1ä½ç¬¦å·ï¼Œ8ä½æŒ‡æ•°ï¼Œ23ä½å°æ•°
 	printf("%d \n ",age);
 	printf("%f \n",wt);
-	//   %f£¬ÓÃÓÚ±íÊ¾µ¥¾«¶È¸¡µãÊýÀàÐÍÊý¾Ý
+	//   %fï¼Œç”¨äºŽè¡¨ç¤ºå•ç²¾åº¦æµ®ç‚¹æ•°ç±»åž‹æ•°æ®
 	short int age2  = age + 1;
 	float wt2 = wt - 4;
 	printf("%d \n",age2);
@@ -25,9 +25,9 @@ int main()
 	double x = 0.608;
 	double y = 1.214;
 	double z = x + y;
-	//double£¬Ë«¾«¶È¸¡µãÀàÐÍ±äÁ¿£¬1Î»·ûºÅ£¬16Î»Ö¸Êý£¬52Î»Ð¡Êý
+	//doubleï¼ŒåŒç²¾åº¦æµ®ç‚¹ç±»åž‹å˜é‡ï¼Œ1ä½ç¬¦å·ï¼Œ16ä½æŒ‡æ•°ï¼Œ52ä½å°æ•°
 	printf("%lf \n" ,z);
-	//   %lf£¬ÓÃÓÚ±íÊ¾Ë«¾«¶È¸¡µãÀàÐÍÊý¾Ý
+	//   %lfï¼Œç”¨äºŽè¡¨ç¤ºåŒç²¾åº¦æµ®ç‚¹ç±»åž‹æ•°æ®
 	getch();
 	return 0;
 }
